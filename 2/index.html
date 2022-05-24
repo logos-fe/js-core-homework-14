@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="registration">
+        <form name="name" class="name-form">
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First Name"
+            class="name-input"
+          />
+          <input
+            type="text"
+            name="last_name"
+            placeholder="Last Name"
+            class="name-input"
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            class="name-input"
+          />
+        </form>
+        <form name="sex" class="sex-form">
+          <input type="radio" name="radio" value="Man" />Man
+          <input type="radio" name="radio" value="Woman" />Woman
+        </form>
+        <form name="position" class="position-form">
+          <select name="positions" id="positions">
+            <option value="position" selected="true" disabled>Position</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="QC/QA">QC/QA</option>
+          </select>
+        </form>
+        <form name="agreement" class="agreement-form">
+          <input type="checkbox" name="agree" id="agree" />I agree...
+          <input type="button" name="button" value="Sign Up" class="button" />
+        </form>
+      </div>
+      <div class="profile-dis">
+        <div class="left">
+          <img src="./img/man.jpg" alt="" class="image" />
+          <form name="signout">
+            <input
+              type="button"
+              class="button"
+              name="button"
+              value="Sign Out"
+            />
+          </form>
+        </div>
+        <div class="right">
+          <div class="name">
+            <p id="first-name">You've not entered your First Name</p>
+            <p id="last-name">You've not entered your Last Name</p>
+            <p id="email">You've not entered your Email</p>
+          </div>
+          <div class="sex">
+            <p id="sex-text">You've not selected your sex</p>
+          </div>
+          <div class="position">
+            <p id="position-text">You've not selected your position</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
